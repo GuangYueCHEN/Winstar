@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="AnalyseLogs:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AnalyseLogs_jar</output-path>
+    <root id="root">
+      <element id="archive" name="AnalyseLogs.jar">
+        <element id="module-output" name="AnalyseLogs" />
+      </element>
+      <element id="library" level="project" name="Maven: org.apache.spark:spark-streaming-kafka-0-10_2.11:2.3.1" />
+      <element id="library" level="project" name="Maven: org.apache.kafka:kafka-clients:0.10.0.1" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="streamingTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/streamingTest_jar</output-path>
+    <root id="root">
+      <element id="archive" name="streamingTest.jar">
+        <element id="module-output" name="streamingTest" />
+        <element id="library" level="project" name="Maven: org.apache.spark:spark-streaming_2.11:2.3.1" />
+        <element id="library" level="project" name="Maven: org.json4s:json4s-jackson_2.11:3.2.11" />
+        <element id="library" level="project" name="Maven: org.apache.spark:spark-streaming-kafka-0-8_2.11:2.3.1" />
+      </element>
+    </root>
+  </artifact>
+</component>
