@@ -1,0 +1,286 @@
+2018-07-04 10:16:38,229 INFO mapreduce.Job: Task Id : attempt_1530670327813_0001_m_000001_0, Status : FAILED
+[2018-07-04 10:16:36.603]Container [pid=5589,containerID=container_1530670327813_0001_01_000003] is running beyond virtual memory limits. Current usage: 139.9 MB of 1 GB physical memory used; 2.5 GB of 2.1 GB virtual memory used. Killing container.
+Dump of the process-tree for container_1530670327813_0001_01_000003 :
+    |- PID PPID PGRPID SESSID CMD_NAME USER_MODE_TIME(MILLIS) SYSTEM_TIME(MILLIS) VMEM_USAGE(BYTES) RSSMEM_USAGE(PAGES) FULL_CMD_LINE
+    |- 5608 5589 5589 5589 (java) 349 45 2623389696 35086 /usr/lib/jdk1.8.0_171/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx820m -Djava.io.tmpdir=/data/hd3/tmp/nm-local-dir/usercache/root/appcache/application_1530670327813_0001/container_1530670327813_0001_01_000003/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/usr/hadoop/hadoop-3.0.3/logs/userlogs/application_1530670327813_0001/container_1530670327813_0001_01_000003 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA -Dhadoop.root.logfile=syslog org.apache.hadoop.mapred.YarnChild 192.168.56.102 33965 attempt_1530670327813_0001_m_000001_0 3 
+    |- 5589 5588 5589 5589 (bash) 0 0 20074496 739 /bin/bash -c /usr/lib/jdk1.8.0_171/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN   -Xmx820m -Djava.io.tmpdir=/data/hd3/tmp/nm-local-dir/usercache/root/appcache/application_1530670327813_0001/container_1530670327813_0001_01_000003/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/usr/hadoop/hadoop-3.0.3/logs/userlogs/application_1530670327813_0001/container_1530670327813_0001_01_000003 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA -Dhadoop.root.logfile=syslog org.apache.hadoop.mapred.YarnChild 192.168.56.102 33965 attempt_1530670327813_0001_m_000001_0 3 1>/usr/hadoop/hadoop-3.0.3/logs/userlogs/application_1530670327813_0001/container_1530670327813_0001_01_000003/stdout 2>/usr/hadoop/hadoop-3.0.3/logs/userlogs/application_1530670327813_0001/container_1530670327813_0001_01_000003/stderr  
+
+[2018-07-04 10:16:36.670]Container killed on request. Exit code is 143
+[2018-07-04 10:16:36.757]Container exited with a non-zero exit code 143. 
+
+2018-07-04 10:16:38,257 INFO mapreduce.Job: Task Id : attempt_1530670327813_0001_m_000000_0, Status : FAILED
+[2018-07-04 10:16:36.787]Container [pid=5596,containerID=container_1530670327813_0001_01_000002] is running beyond virtual memory limits. Current usage: 140.1 MB of 1 GB physical memory used; 2.5 GB of 2.1 GB virtual memory used. Killing container.
+Dump of the process-tree for container_1530670327813_0001_01_000002 :
+    |- PID PPID PGRPID SESSID CMD_NAME USER_MODE_TIME(MILLIS) SYSTEM_TIME(MILLIS) VMEM_USAGE(BYTES) RSSMEM_USAGE(PAGES) FULL_CMD_LINE
+    |- 5596 5592 5596 5596 (bash) 0 0 20074496 736 /bin/bash -c /usr/lib/jdk1.8.0_171/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN   -Xmx820m -Djava.io.tmpdir=/data/hd3/tmp/nm-local-dir/usercache/root/appcache/application_1530670327813_0001/container_1530670327813_0001_01_000002/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/usr/hadoop/hadoop-3.0.3/logs/userlogs/application_1530670327813_0001/container_1530670327813_0001_01_000002 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA -Dhadoop.root.logfile=syslog org.apache.hadoop.mapred.YarnChild 192.168.56.102 33965 attempt_1530670327813_0001_m_000000_0 2 1>/usr/hadoop/hadoop-3.0.3/logs/userlogs/application_1530670327813_0001/container_1530670327813_0001_01_000002/stdout 2>/usr/hadoop/hadoop-3.0.3/logs/userlogs/application_1530670327813_0001/container_1530670327813_0001_01_000002/stderr  
+    |- 5612 5596 5596 5596 (java) 355 53 2657075200 35129 /usr/lib/jdk1.8.0_171/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN -Xmx820m -Djava.io.tmpdir=/data/hd3/tmp/nm-local-dir/usercache/root/appcache/application_1530670327813_0001/container_1530670327813_0001_01_000002/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/usr/hadoop/hadoop-3.0.3/logs/userlogs/application_1530670327813_0001/container_1530670327813_0001_01_000002 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA -Dhadoop.root.logfile=syslog org.apache.hadoop.mapred.YarnChild 192.168.56.102 33965 attempt_1530670327813_0001_m_000000_0 2 
+
+[2018-07-04 10:16:36.933]Container killed on request. Exit code is 143
+[2018-07-04 10:16:36.962]Container exited with a non-zero exit code 143. 
+
+2018-07-04 10:16:44,323 INFO mapreduce.Job: Task Id : attempt_1530670327813_0001_m_000001_1, Status : FAILED
+Error: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.protocol.AlreadyBeingCreatedException): Failed to CREATE_FILE /DivMessage/outputs/1-m-00001 for DFSClient_attempt_1530670327813_0001_m_000001_1_243571953_1 on 192.168.56.105 because this file lease is currently owned by DFSClient_attempt_1530670327813_0001_m_000001_0_-1088749757_1 on 192.168.56.105
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.recoverLeaseInternal(FSNamesystem.java:2566)
+    at org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile(FSDirWriteFileOp.java:379)
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2415)
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2324)
+    at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:767)
+    at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:451)
+    at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+    at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+    at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+    at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at javax.security.auth.Subject.doAs(Subject.java:422)
+    at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1686)
+    at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+    at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1491)
+    at org.apache.hadoop.ipc.Client.call(Client.java:1437)
+    at org.apache.hadoop.ipc.Client.call(Client.java:1347)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:228)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:116)
+    at com.sun.proxy.$Proxy17.create(Unknown Source)
+    at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:350)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:422)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:165)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:157)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:95)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:359)
+    at com.sun.proxy.$Proxy18.create(Unknown Source)
+    at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:273)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1170)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1149)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1087)
+    at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:463)
+    at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:460)
+    at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+    at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:474)
+    at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:401)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1103)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1083)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:972)
+    at org.apache.hadoop.mapreduce.lib.output.TextOutputFormat.getRecordWriter(TextOutputFormat.java:126)
+    at org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.getRecordWriter(MultipleOutputs.java:488)
+    at org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.write(MultipleOutputs.java:468)
+    at myDivMessage$TokenizerMapper.map(myDivMessage.java:84)
+    at myDivMessage$TokenizerMapper.map(myDivMessage.java:53)
+    at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+    at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:799)
+    at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347)
+    at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:174)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at javax.security.auth.Subject.doAs(Subject.java:422)
+    at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1686)
+    at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:168)
+
+2018-07-04 10:16:44,332 INFO mapreduce.Job: Task Id : attempt_1530670327813_0001_m_000000_1, Status : FAILED
+Error: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.protocol.AlreadyBeingCreatedException): Failed to CREATE_FILE /DivMessage/outputs/1-m-00000 for DFSClient_attempt_1530670327813_0001_m_000000_1_-598639286_1 on 192.168.56.102 because this file lease is currently owned by DFSClient_attempt_1530670327813_0001_m_000000_0_338420344_1 on 192.168.56.105
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.recoverLeaseInternal(FSNamesystem.java:2566)
+    at org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile(FSDirWriteFileOp.java:379)
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2415)
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2324)
+    at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:767)
+    at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:451)
+    at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+    at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+    at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+    at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at javax.security.auth.Subject.doAs(Subject.java:422)
+    at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1686)
+    at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+    at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1491)
+    at org.apache.hadoop.ipc.Client.call(Client.java:1437)
+    at org.apache.hadoop.ipc.Client.call(Client.java:1347)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:228)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:116)
+    at com.sun.proxy.$Proxy17.create(Unknown Source)
+    at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:350)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:422)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:165)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:157)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:95)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:359)
+    at com.sun.proxy.$Proxy18.create(Unknown Source)
+    at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:273)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1170)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1149)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1087)
+    at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:463)
+    at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:460)
+    at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+    at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:474)
+    at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:401)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1103)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1083)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:972)
+    at org.apache.hadoop.mapreduce.lib.output.TextOutputFormat.getRecordWriter(TextOutputFormat.java:126)
+    at org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.getRecordWriter(MultipleOutputs.java:488)
+    at org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.write(MultipleOutputs.java:468)
+    at myDivMessage$TokenizerMapper.map(myDivMessage.java:84)
+    at myDivMessage$TokenizerMapper.map(myDivMessage.java:53)
+    at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+    at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:799)
+    at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347)
+    at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:174)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at javax.security.auth.Subject.doAs(Subject.java:422)
+    at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1686)
+    at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:168)
+
+2018-07-04 10:16:51,402 INFO mapreduce.Job: Task Id : attempt_1530670327813_0001_m_000001_2, Status : FAILED
+Error: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.protocol.AlreadyBeingCreatedException): Failed to CREATE_FILE /DivMessage/outputs/1-m-00001 for DFSClient_attempt_1530670327813_0001_m_000001_2_-425672125_1 on 192.168.56.102 because this file lease is currently owned by DFSClient_attempt_1530670327813_0001_m_000001_0_-1088749757_1 on 192.168.56.105
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.recoverLeaseInternal(FSNamesystem.java:2566)
+    at org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile(FSDirWriteFileOp.java:379)
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2415)
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2324)
+    at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:767)
+    at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:451)
+    at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+    at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+    at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+    at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at javax.security.auth.Subject.doAs(Subject.java:422)
+    at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1686)
+    at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+    at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1491)
+    at org.apache.hadoop.ipc.Client.call(Client.java:1437)
+    at org.apache.hadoop.ipc.Client.call(Client.java:1347)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:228)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:116)
+    at com.sun.proxy.$Proxy17.create(Unknown Source)
+    at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:350)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:422)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:165)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:157)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:95)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:359)
+    at com.sun.proxy.$Proxy18.create(Unknown Source)
+    at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:273)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1170)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1149)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1087)
+    at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:463)
+    at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:460)
+    at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+    at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:474)
+    at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:401)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1103)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1083)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:972)
+    at org.apache.hadoop.mapreduce.lib.output.TextOutputFormat.getRecordWriter(TextOutputFormat.java:126)
+    at org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.getRecordWriter(MultipleOutputs.java:488)
+    at org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.write(MultipleOutputs.java:468)
+    at myDivMessage$TokenizerMapper.map(myDivMessage.java:84)
+    at myDivMessage$TokenizerMapper.map(myDivMessage.java:53)
+    at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+    at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:799)
+    at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347)
+    at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:174)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at javax.security.auth.Subject.doAs(Subject.java:422)
+    at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1686)
+    at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:168)
+
+2018-07-04 10:16:53,423 INFO mapreduce.Job: Task Id : attempt_1530670327813_0001_m_000000_2, Status : FAILED
+Error: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.protocol.AlreadyBeingCreatedException): Failed to CREATE_FILE /DivMessage/outputs/1-m-00000 for DFSClient_attempt_1530670327813_0001_m_000000_2_-102364943_1 on 192.168.56.102 because this file lease is currently owned by DFSClient_attempt_1530670327813_0001_m_000000_0_338420344_1 on 192.168.56.105
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.recoverLeaseInternal(FSNamesystem.java:2566)
+    at org.apache.hadoop.hdfs.server.namenode.FSDirWriteFileOp.startFile(FSDirWriteFileOp.java:379)
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2415)
+    at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2324)
+    at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:767)
+    at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:451)
+    at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+    at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+    at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+    at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at javax.security.auth.Subject.doAs(Subject.java:422)
+    at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1686)
+    at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+    at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1491)
+    at org.apache.hadoop.ipc.Client.call(Client.java:1437)
+    at org.apache.hadoop.ipc.Client.call(Client.java:1347)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:228)
+    at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:116)
+    at com.sun.proxy.$Proxy17.create(Unknown Source)
+    at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.create(ClientNamenodeProtocolTranslatorPB.java:350)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:422)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:165)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:157)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:95)
+    at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:359)
+    at com.sun.proxy.$Proxy18.create(Unknown Source)
+    at org.apache.hadoop.hdfs.DFSOutputStream.newStreamForCreate(DFSOutputStream.java:273)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1170)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1149)
+    at org.apache.hadoop.hdfs.DFSClient.create(DFSClient.java:1087)
+    at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:463)
+    at org.apache.hadoop.hdfs.DistributedFileSystem$8.doCall(DistributedFileSystem.java:460)
+    at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+    at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:474)
+    at org.apache.hadoop.hdfs.DistributedFileSystem.create(DistributedFileSystem.java:401)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1103)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1083)
+    at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:972)
+    at org.apache.hadoop.mapreduce.lib.output.TextOutputFormat.getRecordWriter(TextOutputFormat.java:126)
+    at org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.getRecordWriter(MultipleOutputs.java:488)
+    at org.apache.hadoop.mapreduce.lib.output.MultipleOutputs.write(MultipleOutputs.java:468)
+    at myDivMessage$TokenizerMapper.map(myDivMessage.java:84)
+    at myDivMessage$TokenizerMapper.map(myDivMessage.java:53)
+    at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+    at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:799)
+    at org.apache.hadoop.mapred.MapTask.run(MapTask.java:347)
+    at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:174)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at javax.security.auth.Subject.doAs(Subject.java:422)
+    at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1686)
+    at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:168)
+
+2018-07-04 10:16:59,475 INFO mapreduce.Job:  map 100% reduce 0%
+2018-07-04 10:17:00,494 INFO mapreduce.Job: Job job_1530670327813_0001 failed with state FAILED due to: Task failed task_1530670327813_0001_m_000001
+Job failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0
+
+2018-07-04 10:17:00,616 INFO mapreduce.Job: Counters: 13
+    Job Counters 
+        Failed map tasks=7
+        Killed map tasks=1
+        Launched map tasks=8
+        Other local map tasks=6
+        Data-local map tasks=2
+        Total time spent by all maps in occupied slots (ms)=53587
+        Total time spent by all reduces in occupied slots (ms)=0
+        Total time spent by all map tasks (ms)=53587
+        Total vcore-milliseconds taken by all map tasks=53587
+        Total megabyte-milliseconds taken by all map tasks=54873088
+    Map-Reduce Framework
+        CPU time spent (ms)=0
+        Physical memory (bytes) snapshot=0
+        Virtual memory (bytes) snapshot=0
+root@master:/home/cgy/IdeaProjects/DivMessages/out/artifacts/mydiv# hadoop fs -ls /DivMessage/outputs
+Found 140 items

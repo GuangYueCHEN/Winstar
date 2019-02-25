@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="mydiv">
+    <output-path>$PROJECT_DIR$/out/artifacts/mydiv</output-path>
+    <root id="archive" name="mydiv.jar">
+      <element id="module-output" name="DivMessages" />
+    </root>
+  </artifact>
+</component>

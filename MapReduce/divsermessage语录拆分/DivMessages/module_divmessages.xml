@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_divmessages" default="compile.module.divmessages">
+  <dirname property="module.divmessages.basedir" file="${ant.file.module_divmessages}"/>
+  
+  <property name="module.jdk.home.divmessages" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.divmessages" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.divmessages" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.divmessages" value="-encoding UTF-8 -source 5 -target 1.5 ${compiler.args}"/>
+  
+  <property name="divmessages.output.dir" value="${module.divmessages.basedir}/target/classes"/>
+  <property name="divmessages.testoutput.dir" value="${module.divmessages.basedir}/target/test-classes"/>
+  
+  <path id="divmessages.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="divmessages.module.production.classpath">
+    <path refid="${module.jdk.classpath.divmessages}"/>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/client">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/common">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/hdfs">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/mapreduce">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/yarn">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/tools/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/tools/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/common/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  <path id="divmessages.runtime.production.module.classpath">
+    <pathelement location="${divmessages.output.dir}"/>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/client">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/common">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/hdfs">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/mapreduce">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/yarn">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/tools/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/tools/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/common/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  <path id="divmessages.module.classpath">
+    <path refid="${module.jdk.classpath.divmessages}"/>
+    <pathelement location="${divmessages.output.dir}"/>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/client">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/common">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/hdfs">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/mapreduce">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/yarn">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/tools/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/tools/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/common/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  <path id="divmessages.runtime.module.classpath">
+    <pathelement location="${divmessages.testoutput.dir}"/>
+    <pathelement location="${divmessages.output.dir}"/>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/client">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/common">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/hdfs">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/mapreduce">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/yarn">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/tools/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/tools/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+    <fileset dir="${basedir}/../../../../usr/hadoop/hadoop-3.0.3/share/hadoop/common/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.divmessages">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.divmessages">
+    <patternset refid="compiler.excluded"/>
+    <patternset refid="excluded.from.module.divmessages"/>
+  </patternset>
+  
+  <path id="divmessages.module.sourcepath">
+    <dirset dir="${module.divmessages.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="divmessages.module.test.sourcepath">
+    <dirset dir="${module.divmessages.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.divmessages" depends="compile.module.divmessages.production,compile.module.divmessages.tests" description="Compile module DivMessages"/>
+  
+  <target name="compile.module.divmessages.production" depends="register.custom.compilers" description="Compile module DivMessages; production classes">
+    <mkdir dir="${divmessages.output.dir}"/>
+    <javac2 destdir="${divmessages.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.divmessages}/javac">
+      <compilerarg line="${compiler.args.divmessages}"/>
+      <bootclasspath refid="divmessages.module.bootclasspath"/>
+      <classpath refid="divmessages.module.production.classpath"/>
+      <src refid="divmessages.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.divmessages"/>
+    </javac2>
+    
+    <copy todir="${divmessages.output.dir}">
+      <fileset dir="${module.divmessages.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+        <patternset refid="excluded.from.compilation.divmessages"/>
+      </fileset>
+      <fileset dir="${module.divmessages.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+        <patternset refid="excluded.from.compilation.divmessages"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.divmessages.tests" depends="register.custom.compilers,compile.module.divmessages.production" description="compile module DivMessages; test classes" unless="skip.tests">
+    <mkdir dir="${divmessages.testoutput.dir}"/>
+    <javac2 destdir="${divmessages.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.divmessages}/javac">
+      <compilerarg line="${compiler.args.divmessages}"/>
+      <bootclasspath refid="divmessages.module.bootclasspath"/>
+      <classpath refid="divmessages.module.classpath"/>
+      <src refid="divmessages.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.divmessages"/>
+    </javac2>
+    
+    <copy todir="${divmessages.testoutput.dir}">
+      <fileset dir="${module.divmessages.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+        <patternset refid="excluded.from.compilation.divmessages"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.divmessages" description="cleanup module">
+    <delete dir="${divmessages.output.dir}"/>
+    <delete dir="${divmessages.testoutput.dir}"/>
+  </target>
+</project>
